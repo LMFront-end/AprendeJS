@@ -1,0 +1,118 @@
+Caracteristicas de JS
+
+    -Lenguaje de alto nivel.
+    -Interpretado.
+    -Dinámico.
+    -Débilmente Tipado.
+    -Multi paradigma.
+    -Sensible a MAYÚSCULAS y minusculas.
+
+    variables globales: ---> var (Se asocian al objeto window).
+    variables locales: ---> let nombre: 'Lina'; 
+    variables constantes: ---> const NOMBRE: 'Lina';
+
+    -No necesitas los puntos y comas al final de cada linea.
+
+Estructuras de código 
+
+°Los identificadores deben comenzar con:
+
+    *Una letra  
+    *Un signo de $ 
+    *Un guion bajo _
+    *Nunca con números o caracteres especiales.
+
+    ---> Usa snake_case en:
+        archivos:
+            miprimerproyecto.js
+            mi_primer_proyecto.js
+            mi_archivo_javascript.js
+
+    ---> Usa UPPER_CASE en:
+        constantes: 
+            const UNA_CONSTANTE = 'soy una constante';
+            PI = 3.1415
+
+    ---> Usa upperCamelCase en:
+        clases: 
+            class serHumano {
+                constructor (nombre, genero) {
+                    this.nombre = nombre;
+                    this.genero = genero;
+                }
+
+                miNimbreEs () {
+                    return `Mi nombre es ${this.nombre}  `
+                }
+
+    ---> Usa lowerCamelCase en: 
+        objetos:
+            const unObjetos = {
+                nombre: 'Lina',
+                email: 'guerrero@gmail.com'
+            }
+
+        primitivos: 
+            let unaCadena = 'Hola',
+                unNumero = 19;
+                unBoolean = false;
+
+        funciones: 
+            function holaMundo (nombre) {
+                alert(`HOla mundo ${nombre}`);
+            }
+            holaMundo('Lina');
+
+        instancias: 
+            const ajax = new XMLHttpRequest();
+            jon = new  serHumano('Lina', 'Mujer');
+
+
+ <---- PALABRAS RESERVADAS ----->
+
+A: abstract
+B: boolean, break, byte
+C: case, catch, char, class, const, continue
+D: debugger, default, delete, do, double
+E: else, enum, export, extends
+F: false, final, finally, float, for, function
+G: goto
+I: if, implements, import, in, instanceof, int, interface
+L: let, long
+N: native, new, null
+P: package, private, protected, public
+R: return
+S: short, static, super, switch, synchronized
+T: this, throw, throws, transient, true, try, typeof
+V: var, volatile, void
+W: while, with
+
+<----- FIN DE PALABRAS RESERVADAS ----->
+
+
+ORDENAMIENTO DE CÓDIGO
+
+    1. Implementación de módulos.
+    2. Declaración de variables.
+    3. Declaración de funciones.
+    4. Ejecución de código.
+
+
+Tipos de datos en Javascript
+
+1. Primitivos: Se accede directamente al valor.
+
+    * String
+    * number
+    * boolean
+    * null
+    * Undefined
+    * NaN (not a number)
+
+2. Compuestos: Se accede a la referencia del valor.
+
+    * object = {}
+    * array = []
+    * function () { ...}
+    * class { ... }
+    * etc
